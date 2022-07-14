@@ -4,7 +4,7 @@ import { useFormik } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { updateProfileAction } from "../../redux/slices/users/usersSlices";
-import LoadingComponent from "../../components/Loading";
+// import LoadingComponent from "../../components/Loading";
 import ErrorDisplayMessage from "../../components/ErrorDisplayMessage";
 import DisabledButton from "../../components/DisabledButton";
 
@@ -41,7 +41,7 @@ const UpdateProfile = ({ location: { state } }) => {
   //redirect
   useEffect(() => {
     if (isEdited) history.push("/profile");
-  }, [isEdited, dispatch]);
+  }, [isEdited, dispatch,history]);
   return (
     <>
       {userAppErr || userServerErr ? (

@@ -45,12 +45,12 @@ const EditContent = ({
   //get data form store
 
   const expenseData = useSelector(state => state.expenses);
-  const { appErr, serverErr, expenseUpdated, loading } = expenseData;
+  const { appErr, serverErr, loading } = expenseData;
   console.log(expenseData);
   return (
     <section className="py-5 bg-secondary vh-100">
       <div className="container text-center">
-        <a className="d-inline-block mb-5">
+        <a href=" " className="d-inline-block mb-5">
           <img
             className="img-fluid"
             src={moneySVG}

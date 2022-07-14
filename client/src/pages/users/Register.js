@@ -42,7 +42,7 @@ const Register = () => {
     if (isRegistered) {
       history.push("/login");
     }
-  }, [isRegistered]);
+  }, [isRegistered,history]);
 
   return (
     <section className="position-relative py-5 overflow-hidden vh-100">

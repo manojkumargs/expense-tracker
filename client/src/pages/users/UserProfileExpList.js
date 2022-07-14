@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { userProfileAction } from "../../redux/slices/users/usersSlices";
@@ -30,10 +30,10 @@ const UserProfileExpList = () => {
         <section className="py-6">
           <div className="container-fluid">
             <div className="position-relative border rounded-2">
-              <a
+              {/* <a
                 className="position-absolute top-0 end-0 mt-4 me-4"
                 href="#"
-              ></a>
+              ></a> */}
               <div className="pt-8 px-8 mb-8">
                 <h6 className="mb-0 fs-3">Recent Expense transactions</h6>
                 <p className="mb-0">

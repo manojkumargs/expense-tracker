@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import EditContent from "./components/EditContent";
-import AdminRoute from "./components/Navigation/AdminRoute";
+// import AdminRoute from "./components/Navigation/AdminRoute";
 import Navbar from "./components/Navigation/Navbar";
 import ProtectedRoute from "./components/Navigation/ProtectedRoute";
 import NotAdmin from "./components/NotAdmin";

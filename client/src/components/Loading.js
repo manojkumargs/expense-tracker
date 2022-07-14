@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { css } from "@emotion/react";
 import ClipLoader from "react-spinners/ClipLoader";
 
@@ -10,8 +10,8 @@ const override = css`
 `;
 
 function LoadingComponent() {
-  let [loading, setLoading] = useState(true);
-  let [color, setColor] = useState("#ffffff");
+  // let [loading, setLoading] = useState(true);
+  // let [color, setColor] = useState("#ffffff");
 
   return (
     <div
@@ -23,7 +23,7 @@ function LoadingComponent() {
         backgroundColor: "black",
       }}
     >
-      <ClipLoader color={color} loading={loading} css={override} size={150} />
+      <ClipLoader color="#ffffff" loading={true} css={override} size={150} />
     </div>
   );
 }

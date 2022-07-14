@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useHistory } from "react-router-dom";
@@ -34,17 +34,17 @@ const AddExpense = props => {
 
   //Get expense created from store
   const state = useSelector(state => state.expenses);
-  const { loading, appErr, serverErr, expenseCreated, isExpCreated } = state;
+  const { loading, appErr, serverErr, isExpCreated } = state;
 
   //Redirect
   useEffect(() => {
     if (isExpCreated) history.push("/expenses");
-  }, [isExpCreated, dispatch]);
+  }, [isExpCreated, dispatch,history]);
   return (
     <>
       <section className="py-5 bg-danger vh-100">
         <div className="container text-center">
-          <a className="d-inline-block mb-5">
+          <a href=" " className="d-inline-block mb-5">
             <img
               className="img-fluid"
               src={moneySVG}

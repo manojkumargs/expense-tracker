@@ -5,7 +5,7 @@ import AppPagination from "../../components/AppPagination";
 import ContentDetails from "../../components/ContentDetails";
 import ErrorDisplayMessage from "../../components/ErrorDisplayMessage";
 import LoadingComponent from "../../components/Loading";
-import { fetchAllExpAction } from "../../redux/slices/expenses/expensesSlices";
+// import { fetchAllExpAction } from "../../redux/slices/expenses/expensesSlices";
 import { fetchAllIncomeAction } from "../../redux/slices/income/incomeSlices";
 
 const IncomeList = () => {
@@ -30,10 +30,10 @@ const IncomeList = () => {
         <section className="py-6">
           <div className="container-fluid">
             <div className="position-relative border rounded-2">
-              <a
+              {/* <a
                 className="position-absolute top-0 end-0 mt-4 me-4"
                 href="#"
-              ></a>
+              ></a> */}
               <div className="pt-8 px-8 mb-8">
                 <h6 className="mb-0 fs-3">Recent Income transactions</h6>
                 <p className="mb-0">
